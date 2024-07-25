@@ -1,8 +1,12 @@
-This folder's main purpose is for collecting a large dataset to train the machine learning model.
+### Overview
+
+For this project, I created a Machine Learning Pipeline that made it very easy to collect massive amounts of data to train our models. In the semesters prior to my joining, the research group was only able to collect 1200 data points. Utilizing this pipeline, we were able to collect over 1 million data points in a week. This process utilizes multithreading, OpenCV, Pandas, Numpy, and Google MediaPipe to collect different parts of the body in rapid succession from multiple camera angles. I also utilized Bidirectional Elimination Stepwise Regression and parameter tuning to increase XGBoost Machine Learning model accuracy for predicting pointing location on a TV screen from 6 feet away from 2% to 97.84%.
+
+The final product and model are run on the file `model_testing.py` however if you are more interested in the pipeline, it is as follows:
 
 ### Step 1:
 
-Run `run.py` to start both files. Press `q` to quit the windows (this may be buggy). 
+Run `run.py` to start both files. Press `q` to quit the windows once data collection for a single session is complete.
 
 ### Step 2:
 
@@ -15,20 +19,8 @@ Then, it will concatenate all the data you collected into a single excel file.
 
 ### Step 4:
 
-Tune data
-
-**NOTE: THIS CODE IS NOT WRITTEN RIGHT NOW**
+Run `model_training.py`
 
 ### Step 5:
 
-Update the hyperparameters in `model_training.py` to create the predictive XGBoost model based on your results from Step 4 for your dataset.
-
-Run `model_training.py`
-
-### Step 6:
-
-Use the model exported from this last file in whatever file you want! You can also run `model_testing.py` for to see how good your model is at prediction.
-
-You can create a new dataset by repeating steps 1-3 and then test to see how accurate the model is at prediction.
-
-**NOTE: MODEL_TESTING.PY IS NOT COMPLETED YET**
+Use the model exported from this last file in whatever file you want! You can also run `model_testing_xgb.py` to see how good your model is at prediction.
