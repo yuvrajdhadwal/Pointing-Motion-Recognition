@@ -2,6 +2,8 @@
 
 For this project, I created a Machine Learning Pipeline that made it very easy to collect massive amounts of data to train our models. In the semesters prior to my joining, the research group was only able to collect 1200 data points. Utilizing this pipeline, we were able to collect over 1 million data points in a week. This process utilizes multithreading, OpenCV, Pandas, Numpy, and Google MediaPipe to collect different parts of the body in rapid succession from multiple camera angles. I also utilized Bidirectional Elimination Stepwise Regression and parameter tuning to increase XGBoost Machine Learning model accuracy for predicting pointing location on a TV screen from 6 feet away from 2% to 97.84%.
 
+Check out my other repository called 2024 Atlanta Science and Technology Fair to see my learning process of learning Machine Learning and XGBoost and to see a prototype of this project.
+
 The final product and model are run on the file `model_testing.py` however if you are more interested in the pipeline, it is as follows:
 
 ### Step 1:
